@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BELINA — Way to Glow.</title>
+<meta name="description" content="BELINA is a modern, premium makeup brand. Discover foundation, blush, lips, eyes and glow essentials. Way to glow.">
+<meta name="theme-color" content="#faf5ee">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23f2d4cf'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%234a2f27' font-family='serif'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="announce">Launch collection &nbsp;·&nbsp; Complimentary shipping over EGP 1,500 <span class="ph">(sample offer)</span></div>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <a class="logo" href="#top" aria-label="BELINA — home">BELINA</a>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="Open shopping bag, 0 items" aria-controls="cart" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="count" id="bagCount" aria-hidden="true">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Way to glow.</p>
+        <h1 id="heroTitle">Your Glow.<br><em>Your Rules.</em></h1>
+        <p class="lead">Discover beauty that celebrates you.</p>
+        <div class="cta-row">
+          <a class="btn btn-dark" href="#shop">Shop Now</a>
+          <a class="btn btn-line" href="#about">Discover BELINA</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="arch media">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1000&q=80" alt="Woman with a radiant, dewy makeup look and soft blush" fetchpriority="high">
+        </div>
+        <div class="float-card" aria-hidden="true"><span>New</span> Blush Crush<br><small>Soft-focus colour that melts in</small></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>WAY TO GLOW.</span><span>Skin-first formulas</span><span>WAY TO GLOW.</span><span>Made to be mixed</span><span>WAY TO GLOW.</span><span>Beauty without rules</span>
+      <span>WAY TO GLOW.</span><span>Skin-first formulas</span><span>WAY TO GLOW.</span><span>Made to be mixed</span><span>WAY TO GLOW.</span><span>Beauty without rules</span>
+    </div>
+  </div>
+
+  <!-- BEST SELLERS / SHOP -->
+  <section class="section" id="shop" aria-labelledby="shopTitle">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The favourites</p>
+        <h2 id="shopTitle">Best Sellers</h2>
+        <p class="sub">Launch-collection placeholders with sample pricing in EGP.</p>
+      </div>
+      <div class="toolbar reveal">
+        <div class="chips" role="group" aria-label="Filter by category" id="chips">
+          <button class="chip is-active" data-cat="all" aria-pressed="true">All</button>
+          <button class="chip" data-cat="face" aria-pressed="false">Face</button>
+          <button class="chip" data-cat="lips" aria-pressed="false">Lips</button>
+          <button class="chip" data-cat="eyes" aria-pressed="false">Eyes</button>
+          <button class="chip" data-cat="glow" aria-pressed="false">Glow &amp; Skincare</button>
+        </div>
+        <label class="search">
+          <span class="sr">Search products</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input type="search" id="searchInput" placeholder="Search products" autocomplete="off">
+        </label>
+      </div>
+      <p class="result-note" id="resultNote" role="status" aria-live="polite"></p>
+      <div class="grid" id="productGrid"></div>
+      <p class="empty" id="emptyMsg" hidden>No products match your search. Try another word or clear the filter.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section tint" id="collections" aria-labelledby="catTitle">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Collections</p>
+        <h2 id="catTitle">Shop by Category</h2>
+      </div>
+      <div class="cat-grid">
+        <a class="cat reveal" href="#shop" data-cat="face">
+          <span class="media"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80" alt="Foundation, blush and powder arranged on a cream surface" loading="lazy"></span>
+          <span class="cat-label"><b>Face</b><small>Foundation, blush &amp; glow</small></span>
+        </a>
+        <a class="cat reveal" href="#shop" data-cat="lips">
+          <span class="media"><img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80" alt="Red lipstick swatches and a lipstick bullet" loading="lazy"></span>
+          <span class="cat-label"><b>Lips</b><small>Lipstick &amp; gloss</small></span>
+        </a>
+        <a class="cat reveal" href="#shop" data-cat="eyes">
+          <span class="media"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80" alt="Close-up of a woman's eye with soft neutral eyeshadow" loading="lazy"></span>
+          <span class="cat-label"><b>Eyes</b><small>Mascara &amp; palettes</small></span>
+        </a>
+        <a class="cat reveal" href="#shop" data-cat="glow">
+          <span class="media"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80" alt="Skincare serum bottles on a soft beige background" loading="lazy"></span>
+          <span class="cat-label"><b>Glow &amp; Skincare</b><small>Prep, set &amp; illuminate</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPAIGN -->
+  <section class="campaign" aria-labelledby="campTitle">
+    <div class="wrap camp-grid">
+      <div class="camp-img one reveal media"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Makeup brushes and cosmetics in warm editorial light" loading="lazy"></div>
+      <div class="camp-copy reveal">
+        <p class="eyebrow">The campaign</p>
+        <h2 id="campTitle">A Little More Glow.<br><em>A Lot More You.</em></h2>
+        <p>Makeup isn’t a mask. It’s a mood, a moment, a little extra light on the days you need it. Wear it loud, wear it soft, wear it your way.</p>
+        <a class="btn btn-dark" href="#shop">Explore the Collection</a>
+      </div>
+      <div class="camp-img two reveal media"><img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=900&q=80" alt="Woman applying a soft pink lip colour" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about" aria-labelledby="aboutTitle">
+    <div class="wrap about-grid">
+      <div class="about-img reveal media"><img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?auto=format&fit=crop&w=900&q=80" alt="BELINA-style skincare and makeup essentials on a champagne background" loading="lazy"></div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">About BELINA</p>
+        <h2 id="aboutTitle">Beautiful in your own skin.</h2>
+        <p>BELINA began with a simple belief: beauty should feel like you, only brighter. Not a rulebook, not a template, but a way to express who you are and how you feel today.</p>
+        <p>Our formulas are designed to feel weightless, blend effortlessly and let your skin do the talking. Shades you’ll reach for every morning, textures you’ll never want to take off.</p>
+        <p>Confidence is the most beautiful finish. We’re here to help you find yours.</p>
+        <ul class="values">
+          <li><b>Confidence</b><span>Glow from the inside out.</span></li>
+          <li><b>Individuality</b><span>No two faces, no two rules.</span></li>
+          <li><b>Self-expression</b><span>Play, mix, make it yours.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" aria-labelledby="newsTitle">
+    <div class="wrap narrow reveal">
+      <p class="eyebrow">Stay in the glow</p>
+      <h2 id="newsTitle">Get Your Glow On.</h2>
+      <p class="sub">Be the first to hear about launches, shade drops and private offers.</p>
+      <form id="newsForm" novalidate>
+        <label class="sr" for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required aria-describedby="newsMsg">
+        <button class="btn btn-dark" type="submit">Subscribe</button>
+      </form>
+      <p class="form-msg" id="newsMsg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="#top" aria-label="BELINA — back to top">BELINA</a>
+      <p class="slogan">WAY TO GLOW.</p>
+      <div class="social">
+        <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#" data-social="tiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a id="contactEmail" href="#">hello@belina.example</a></li>
+        <li id="contactPhone">+20 100 000 0000</li>
+        <li id="contactAddress">Cairo, Egypt</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="#contact" data-info="care">Help &amp; FAQs</a></li>
+        <li><a href="#contact" data-info="shipping">Shipping &amp; Returns</a></li>
+        <li><a href="#contact" data-info="privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-info" id="infoBox" role="status" aria-live="polite" hidden></div>
+  <div class="wrap legal">© <span id="year">2026</span> BELINA. All rights reserved. Product names, prices and contact details are launch placeholders.</div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="cart" aria-label="Shopping bag" aria-hidden="true">
+  <div class="drawer-head">
+    <h2>Your Bag</h2>
+    <button class="icon-btn" id="closeCart" aria-label="Close shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  </div>
+  <div class="ship-progress" id="shipProgress">
+    <p id="shipText"></p>
+    <div class="bar-track"><div class="bar-fill" id="shipFill"></div></div>
+  </div>
+  <ul class="cart-list" id="cartList"></ul>
+  <p class="cart-empty" id="cartEmpty">Your bag is empty.<br><a href="#shop" id="emptyShop">Find your glow</a></p>
+  <div class="drawer-foot" id="cartFoot">
+    <div class="subtotal"><span>Subtotal</span><b id="cartTotal">EGP 0</b></div>
+    <button class="btn btn-dark block" id="checkoutBtn" type="button">Checkout</button>
+    <p class="note" id="checkoutNote" role="status" aria-live="polite" hidden>Checkout isn’t connected yet. Accepting real payments requires a payment provider (for example Paymob, Fawry or Stripe) to be integrated.</p>
+    <button class="link-btn" id="clearCart" type="button">Clear bag</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
